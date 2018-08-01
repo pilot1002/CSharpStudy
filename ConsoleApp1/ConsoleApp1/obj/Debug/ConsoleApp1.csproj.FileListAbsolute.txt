@@ -1,0 +1,14 @@
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\Git\TEST\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\myGit\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\myGit\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\myGit\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\myGit\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\myGit\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\myGit\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\myGit\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
