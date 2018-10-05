@@ -1,0 +1,11 @@
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\bin\Debug\netcoreapp2.0\LIveCoding-01Calc.deps.json
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\bin\Debug\netcoreapp2.0\LIveCoding-01Calc.runtimeconfig.json
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\bin\Debug\netcoreapp2.0\LIveCoding-01Calc.runtimeconfig.dev.json
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\bin\Debug\netcoreapp2.0\LIveCoding-01Calc.dll
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\bin\Debug\netcoreapp2.0\LIveCoding-01Calc.pdb
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\obj\Debug\netcoreapp2.0\LIveCoding-01Calc.csprojAssemblyReference.cache
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\obj\Debug\netcoreapp2.0\LIveCoding-01Calc.csproj.CoreCompileInputs.cache
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\obj\Debug\netcoreapp2.0\LIveCoding-01Calc.AssemblyInfoInputs.cache
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\obj\Debug\netcoreapp2.0\LIveCoding-01Calc.AssemblyInfo.cs
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\obj\Debug\netcoreapp2.0\LIveCoding-01Calc.dll
+C:\myGit\csharpstudy\LIveCoding-01Calc\LIveCoding-01Calc\obj\Debug\netcoreapp2.0\LIveCoding-01Calc.pdb
