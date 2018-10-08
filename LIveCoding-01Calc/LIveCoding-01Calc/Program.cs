@@ -1,130 +1,72 @@
 ﻿using System;
+using System.Linq;
 
 namespace LIveCoding_01Calc
 {
     class Program
     {
-        static ConsoleKeyInfo keys;
-        static string choiceOp = String.Empty;
-        static double input1 = 0d;
-        static double input2 = 0d;
-        static double result = 0d;
-
-        //입력된 숫자 횟수
-        static int cnt = 0;
+        private static readonly string[] operations = { "+", "-", "*", "/" };
 
         static void Main(string[] args)
         {
+            double result = 0;
+            double firstNumber = SetNumber("첫번째 숫자 : ");
+            double secondNumber = SetNumber("두번째 숫자 : ");
 
-            while (true)
-            {
-                try
-                {
-                    Console.Write("숫자를 입력하세요 --> ");
-                    input1 = Convert.ToDouble(Console.ReadLine());
+            string stringOperation = SetOperation("연산자 선택 : + (a), - (s), * (m), / (d) : ");
 
-                    if (keys.Key.ToString() == "Escape")
-                    {
-                        input1 = 0;
-                    }
-
-                    //입력된 숫자가 첫번째이면, input2에 input1의 값을 복사
-                    //나중에 "=" or "Enter"를 눌렀을때 반복계산을 위한 기준 값이 됨
-                    if (cnt == 0)
-                    {
-                        input2 = input1;
-                        Console.WriteLine($"input2 : input1 = {input2} : {input1}");
-                    }
-
-                    cnt++;
-                    Console.WriteLine($"입력된 숫자 : {input1} <--- {cnt}번째 입력된 숫자");
-
-                    Console.Write("연산자 입력 : (+) (-) (*) (/) 만 가능 :   ");
-                    keys = Console.ReadKey();
-                    Console.WriteLine($"\n입력된 키 : {keys.Key} or {keys.KeyChar}");
-
-                    choiceOp = keys.KeyChar.ToString();
-
-                    if (cnt > 0)
-                    {
-                        Console.WriteLine($"input2 : input1 = {input2} : {input1}");
-                        Op();
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-                catch (Exception)
-                {
-                    Console.WriteLine("catch에 들어왔습니다.");
-                    Console.WriteLine(keys.Key.ToString());
-                    Console.WriteLine(choiceOp);
-                    if (keys.Key.ToString() == "Enter" || choiceOp == "=")
-                    {
-                        Console.WriteLine("Enter 를 눌럿습니다.");
-                    }
-                    
-                    else
-                    {
-                        Op();
-                    }
-                }
-            }//while
-        }//Main
-
-        static void Op()
-        {
-            switch (choiceOp)
+            switch (stringOperation)
             {
                 case "+":
-                    Add();
+                case "a":
+                    result = firstNumber + secondNumber;
                     break;
                 case "-":
-                    Sub();
+                case "s":
+                    result = firstNumber - secondNumber;
                     break;
                 case "*":
-                    Mul();
+                case "m":
+                    result = firstNumber * secondNumber;
                     break;
                 case "/":
-                    Div();
-                    break;
-                default:
-                    Console.WriteLine("연산자만 입력 가능");
+                case "d":
+                    result = firstNumber / secondNumber;
                     break;
             }
+            Console.WriteLine($"결과 : {firstNumber} {stringOperation} {secondNumber} = {result}");
         }
 
-        //덧셈
-        static void Add()
+        private static double SetNumber(string outputText)
         {
-            Console.WriteLine("덧셈을 시작합니다.");
-            result = result + input1;
-            Console.WriteLine($"결과값은 ---------------------------> {result}");
+            double parse;
+            Console.Write(outputText);
+            string tempInput = Console.ReadLine();
+            while (!double.TryParse(tempInput, out parse))
+            {
+                Console.WriteLine("숫자만 입력 가능");
+                Console.Write(outputText);
+                tempInput = Console.ReadLine();
+            }
+            return double.Parse(tempInput);
         }
 
-        //뺄셈
-        static void Sub()
+        private static bool IsValidOperation(string input)
         {
-            Console.WriteLine("뺄셈을 시작합니다.");
-            result = result - input1;
-            Console.WriteLine($"결과값은 ---------------------------> {result}");
+            return operations.Contains(input);
         }
 
-        //곱셈
-        static void Mul()
+        private static string SetOperation(string outputText)
         {
-            Console.WriteLine("곱셈을 시작합니다.");
-            result = result * input1;
-            Console.WriteLine($"결과값은 ---------------------------> {result}");
-        }
-
-        //나눗셈
-        static void Div()
-        {
-            Console.WriteLine("나눗셈을 시작합니다.");
-            result = result / input1;
-            Console.WriteLine($"결과값은 ---------------------------> {result}");
+            Console.Write(outputText);
+            string tempInput = Console.ReadLine();
+            while (!IsValidOperation(tempInput))
+            {
+                Console.WriteLine("사칙연산만 가능");
+                Console.Write(outputText);
+                tempInput = Console.ReadLine();
+            }
+            return tempInput;
         }
     }
 }
